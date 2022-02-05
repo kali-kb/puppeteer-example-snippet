@@ -11,7 +11,7 @@ let func = async() => {
     // await page.pdf({path: 'scraper.pdf', format: 'a4'}) generates pdf on current path
     //page.screenshot({path})  generates image file of site
     // console.log(site)
-    const data = await page.evaluate((cont) => {
+    const data = await page.evaluate(() => {
 
         const titles = []
         const values = document.querySelectorAll('.titlelink') //pupeteer -> browser
